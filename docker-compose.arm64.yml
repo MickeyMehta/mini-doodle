@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile.arm64
+    platform: linux/arm64
+
+  postgres:
+    platform: linux/arm64
+
+  redis:
+    platform: linux/arm64
+
+  prometheus:
+    platform: linux/arm64
